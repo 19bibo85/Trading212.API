@@ -10,6 +10,7 @@
     <PackageTags>Trading212</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/19bibo85/Trading212.API</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
