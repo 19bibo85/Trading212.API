@@ -1,0 +1,7 @@
+{
+  "profiles": {
+    "Trading212.API.Tests": {
+      "commandName": "Project"
+    }
+  }
+}
