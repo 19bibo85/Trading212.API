@@ -2,7 +2,7 @@
 
 An unofficial **C#** library that allows you to interact with the [Trading212](https://www.trading212.com/) API.
 
-## How to send a request to any of endpoints?
+## How to send a request to an endpoints?
 
 You can make a request to any of the **Trading212** endpoints by creating an instance of the `Trading212Config` class and injecting it into the service class.
 
