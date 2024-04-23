@@ -6,6 +6,8 @@ An unofficial **C#** library that allows you to interact with the [Trading212](h
 
 You can make a request to any of the **Trading212** endpoints by creating an instance of the `Trading212Config` class and injecting it into the service class.
 
+Account service example:
+
 ```cs
 var config = Trading212ConfigBuilder
     .Create("your-API-key")
@@ -15,6 +17,20 @@ var config = Trading212ConfigBuilder
 var service = new AccountService(config);
 
 var result = await _service.GetCashAsync();
+```
+
+Order service example:
+
+```cs
+var service = new OrderService(config);
+
+var request = new MarketOrderRequest()
+{
+    Quantity = 1.0m,
+    Ticker = "AAPL_US_EQ"
+};
+
+var result = await service.CreateMarketOrderAsync(request);
 ```
 
 ## How do I know if the request succeeded?
