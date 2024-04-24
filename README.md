@@ -16,7 +16,7 @@ var config = Trading212ConfigBuilder
 	
 var service = new AccountService(config);
 
-var result = await _service.GetCashAsync();
+var result = await service.GetCashAsync();
 ```
 
 Order service example:
