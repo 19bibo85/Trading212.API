@@ -9,10 +9,10 @@ namespace Trading212.API.Tests.Fixtures
         {
             var pie = new PieRequest()
             {
-                DividendCashAction = DividendCashAction.Reinvest,
+                DividendCashAction = PieDividendCashAction.REINVEST,
                 EndDate = DateTime.UtcNow.Date.AddDays(1),
                 Goal = 10,
-                Icon = Icon.Unicorn,
+                Icon = PieIcon.Unicorn,
                 InstrumentShares = new InstrumentSharesRequest()
                 {
                     { GlobalFixtures.Ticker, 1.0m }

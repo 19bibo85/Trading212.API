@@ -12,7 +12,7 @@ namespace Trading212.API.DTOs.Responses.Pies
 
         [JsonProperty("dividendCashAction", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(StringEnumConverter))]
-        public DividendCashAction? DividendCashAction { get; set; }
+        public PieDividendCashAction? DividendCashAction { get; set; }
 
         [JsonProperty("endDate", NullValueHandling = NullValueHandling.Ignore)]
         public DateTime? EndDate { get; set; }
@@ -21,7 +21,7 @@ namespace Trading212.API.DTOs.Responses.Pies
         public decimal? Goal { get; set; }
 
         [JsonProperty("icon", NullValueHandling = NullValueHandling.Ignore)]
-        public Icon? Icon { get; set; }
+        public PieIcon? Icon { get; set; }
 
         [JsonProperty("id", NullValueHandling = NullValueHandling.Ignore)]
         public long? Id { get; set; }

@@ -12,7 +12,7 @@ namespace Trading212.API.Tests.Fixtures
                 LimitPrice = 1.0m,
                 Quantity = 1.0m,
                 Ticker = GlobalFixtures.Ticker,
-                TimeValidity = TimeValidity.Day
+                TimeValidity = OrderTimeValidity.DAY
             };
 
             return limit;
@@ -36,7 +36,7 @@ namespace Trading212.API.Tests.Fixtures
                 Quantity = 1.0m,
                 StopPrice = 340.0m,
                 Ticker = GlobalFixtures.Ticker,
-                TimeValidity = TimeValidity.Day
+                TimeValidity = OrderTimeValidity.DAY
             };
 
             return stop;
@@ -50,7 +50,7 @@ namespace Trading212.API.Tests.Fixtures
                 Quantity = 1.0m,
                 StopPrice = 340.0m,
                 Ticker = GlobalFixtures.Ticker,
-                TimeValidity = TimeValidity.Day
+                TimeValidity = OrderTimeValidity.DAY
             };
 
             return stopLimit;

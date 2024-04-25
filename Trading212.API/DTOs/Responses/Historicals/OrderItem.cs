@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using Trading212.API.DTOs.Enums;
 
 namespace Trading212.API.DTOs.Responses.Historicals
 {
@@ -16,7 +17,7 @@ namespace Trading212.API.DTOs.Responses.Historicals
         public DateTime? DateModified { get; set; }
 
         [JsonProperty("executor", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Executor { get; set; }
+        public OrderExecutor? Executor { get; set; }
 
         [JsonProperty("fillCost", NullValueHandling = NullValueHandling.Ignore)]
         public decimal? FillCost { get; set; }
@@ -31,7 +32,7 @@ namespace Trading212.API.DTOs.Responses.Historicals
         public decimal? FillResult { get; set; }
 
         [JsonProperty("fillType", NullValueHandling = NullValueHandling.Ignore)]
-        public string? FillType { get; set; }
+        public OrderFillType? FillType { get; set; }
 
         [JsonProperty("filledQuantity", NullValueHandling = NullValueHandling.Ignore)]
         public decimal? FilledQuantity { get; set; }
@@ -55,7 +56,7 @@ namespace Trading212.API.DTOs.Responses.Historicals
         public decimal? ParentOrder { get; set; }
 
         [JsonProperty("status", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Status { get; set; }
+        public OrderStatus? Status { get; set; }
 
         [JsonProperty("stopPrice", NullValueHandling = NullValueHandling.Ignore)]
         public decimal? StopPrice { get; set; }
@@ -67,9 +68,9 @@ namespace Trading212.API.DTOs.Responses.Historicals
         public string? Ticker { get; set; }
 
         [JsonProperty("timeValidity", NullValueHandling = NullValueHandling.Ignore)]
-        public string? TimeValidity { get; set; }
+        public OrderTimeValidity? TimeValidity { get; set; }
 
         [JsonProperty("type", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Type { get; set; }
+        public OrderType? Type { get; set; }
     }
 }

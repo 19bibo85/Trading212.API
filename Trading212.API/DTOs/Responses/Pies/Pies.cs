@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Trading212.API.DTOs.Enums;
 
 namespace Trading212.API.DTOs.Responses.Pies
 {
@@ -20,6 +21,6 @@ namespace Trading212.API.DTOs.Responses.Pies
         public Results? Result { get; set; }
 
         [JsonProperty("status", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Status { get; set; }
+        public PieStatus? Status { get; set; }
     }    
 }

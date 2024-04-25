@@ -2,7 +2,7 @@
 
 namespace Trading212.API.DTOs.Enums
 {
-    public enum Icon
+    public enum PieIcon
     {
         [EnumMember(Value = "Home")]
         Home,

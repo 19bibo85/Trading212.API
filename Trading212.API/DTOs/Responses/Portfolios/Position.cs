@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using Trading212.API.DTOs.Enums;
 
 namespace Trading212.API.DTOs.Responses.Portfolios
 {
@@ -12,7 +13,7 @@ namespace Trading212.API.DTOs.Responses.Portfolios
         public decimal? CurrentPrice { get; set; }
 
         [JsonProperty("frontend", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Frontend { get; set; }
+        public PortfolioFrontend? Frontend { get; set; }
 
         [JsonProperty("fxPpl", NullValueHandling = NullValueHandling.Ignore)]
         public decimal? FxPpl { get; set; }

@@ -50,9 +50,9 @@ namespace Trading212.API.Tests
             Assert.NotNull(result.Data);
             Assert.IsType<Pie>(result.Data);
             Assert.IsType<Settings>(result.Data.Settings);
-            Assert.Equal(DividendCashAction.Reinvest, result.Data.Settings.DividendCashAction);
+            Assert.Equal(PieDividendCashAction.REINVEST, result.Data.Settings.DividendCashAction);
             Assert.NotNull(result.Data.Settings.EndDate);
-            Assert.Equal(Icon.Unicorn, result.Data.Settings.Icon);
+            Assert.Equal(PieIcon.Unicorn, result.Data.Settings.Icon);
             Assert.NotNull(result.Data.Instruments);
             Assert.NotEmpty(result.Data.Instruments);
             Assert.Equal(GlobalFixtures.Ticker, result.Data.Instruments[0].Ticker);

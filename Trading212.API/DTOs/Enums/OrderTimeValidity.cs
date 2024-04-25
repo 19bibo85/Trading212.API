@@ -2,12 +2,12 @@
 
 namespace Trading212.API.DTOs.Enums
 {
-    public enum TimeValidity
+    public enum OrderTimeValidity
     {
         [EnumMember(Value = "DAY")]
-        Day,
+        DAY,
 
         [EnumMember(Value = "GTC")]
-        Gtc
+        GTC
     }
 }

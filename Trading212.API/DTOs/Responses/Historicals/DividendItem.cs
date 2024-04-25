@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using Trading212.API.DTOs.Enums;
 
 namespace Trading212.API.DTOs.Responses.Historicals
 {
@@ -27,6 +28,6 @@ namespace Trading212.API.DTOs.Responses.Historicals
         public string? Ticker { get; set; }
 
         [JsonProperty("type", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Type { get; set; }
+        public DividendType? Type { get; set; }
     }
 }

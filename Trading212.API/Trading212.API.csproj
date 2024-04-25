@@ -12,6 +12,7 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/19bibo85/Trading212.API</RepositoryUrl>
     <PackageProjectUrl>https://github.com/19bibo85/Trading212.API</PackageProjectUrl>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

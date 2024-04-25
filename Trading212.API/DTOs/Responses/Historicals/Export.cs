@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using Trading212.API.DTOs.Enums;
 
 namespace Trading212.API.DTOs.Responses.Historicals
 {
@@ -15,7 +16,7 @@ namespace Trading212.API.DTOs.Responses.Historicals
         public long? ReportId { get; set; }
 
         [JsonProperty("status", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Status { get; set; }
+        public ExportStatus? Status { get; set; }
 
         [JsonProperty("timeFrom", NullValueHandling = NullValueHandling.Ignore)]
         public DateTime? TimeFrom { get; set; }

@@ -2,12 +2,12 @@
 
 namespace Trading212.API.DTOs.Enums
 {
-    public enum DividendCashAction
+    public enum PieDividendCashAction
     {
         [EnumMember(Value = "REINVEST")]
-        Reinvest,
+        REINVEST,
 
         [EnumMember(Value = "TO_ACCOUNT_CASH")]
-        ToAccountCash
+        TO_ACCOUNT_CASH
     }
 }

@@ -17,6 +17,6 @@ namespace Trading212.API.DTOs.Requests.Orders
 
         [JsonProperty("timeValidity", NullValueHandling = NullValueHandling.Ignore)]
         [JsonConverter(typeof(StringEnumConverter))]
-        public TimeValidity? TimeValidity { get; set; }
+        public OrderTimeValidity? TimeValidity { get; set; }
     }
 }

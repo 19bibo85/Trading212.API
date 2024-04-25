@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using Trading212.API.DTOs.Enums;
 
 namespace Trading212.API.DTOs.Responses.Metadatas
 {
@@ -30,7 +31,7 @@ namespace Trading212.API.DTOs.Responses.Metadatas
         public string? Ticker { get; set; }
 
         [JsonProperty("type", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Type { get; set; }
+        public MetadataType? Type { get; set; }
 
         [JsonProperty("workingScheduleId", NullValueHandling = NullValueHandling.Ignore)]
         public long? WorkingScheduleId { get; set; }

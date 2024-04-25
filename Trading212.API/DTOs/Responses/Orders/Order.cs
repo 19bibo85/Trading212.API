@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json;
 using System;
+using Trading212.API.DTOs.Enums;
 
 namespace Trading212.API.DTOs.Responses.Orders
 {
@@ -24,19 +25,19 @@ namespace Trading212.API.DTOs.Responses.Orders
         public decimal? Quantity { get; set; }
 
         [JsonProperty("status", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Status { get; set; }
+        public OrderStatus? Status { get; set; }
 
         [JsonProperty("stopPrice", NullValueHandling = NullValueHandling.Ignore)]
         public decimal? StopPrice { get; set; }
 
         [JsonProperty("strategy", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Strategy { get; set; }
+        public OrderStrategy? Strategy { get; set; }
 
         [JsonProperty("ticker", NullValueHandling = NullValueHandling.Ignore)]
         public string? Ticker { get; set; }
 
         [JsonProperty("type", NullValueHandling = NullValueHandling.Ignore)]
-        public string? Type { get; set; }
+        public OrderType? Type { get; set; }
 
         [JsonProperty("value", NullValueHandling = NullValueHandling.Ignore)]
         public decimal? Value { get; set; }
